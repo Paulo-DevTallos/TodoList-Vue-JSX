@@ -8,8 +8,8 @@ const Todo = defineComponent({
   setup() {
     const state  = reactive({
       items: [
-        /*{ id: Math.random().toPrecision(10), task: 'studing Vue JSX' },
-        { id: Math.random().toPrecision(10), task: 'studing Vue Setup' }*/
+        /*{ task: 'studing Vue JSX' },
+        { task: 'studing Vue Setup' }*/
       ],
       newItem: ''
     })
@@ -21,7 +21,6 @@ const Todo = defineComponent({
     function handleAddToList() {
       if (state.newItem !== '') {
         state.items.push({
-          id: Math.random().toPrecision(10),
           task: state.newItem
         })
         state.newItem = ''
