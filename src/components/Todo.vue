@@ -48,8 +48,8 @@ const Todo = defineComponent({
         <div className={styles.box_tasks}>
           <ul>
             {
-              this.state.items.map((item, index) => (
-                <li key={item.id} className={styles.list_item}>{item.task}</li>
+              this.state.items.map((item, id) => (
+                <li key={id} className={styles.list_item}>{item.task}</li>
               ))
             }
           </ul>
