@@ -8,8 +8,9 @@ const Todo = defineComponent({
   setup() {
     const state  = reactive({
       items: [
-        /*{ task: 'studing Vue JSX' },
-        { task: 'studing Vue Setup' }*/
+        { id: 0, task: 'Tarefa de teste' }
+        /*{ id: 0, task: 'studing Vue JSX' },
+        { id: 1, task: 'studing Vue Setup' }*/
       ],
       newItem: ''
     })
